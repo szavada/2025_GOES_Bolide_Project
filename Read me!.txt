@@ -1,3 +1,0 @@
-Project description- I am the newest of a line of several students working on an ongoing project involving bolides detected by the GOES-16 and GOES-17 satellites. My objective is to make some initial size and mass estimates for a small sample of these bolides.
-
-NOTE: files labeled V are reference files from the previous student and are not my work.
