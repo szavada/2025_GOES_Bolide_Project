@@ -48,8 +48,7 @@ class Bolide:
         ilist= []            
         for i in range(len(self.index)): #for every bolide we want to analyze...
             if isinstance(bd.iloc[self.index[i]][f'lat_stereo_{self.satellite}'], float) == True:
-                print('A')
-                #print(f"Satellite {self.satellite} doesn't have an entry for bolide number {self.index[i]}!")
+                print(f"Satellite {self.satellite} doesn't have an entry for bolide number {self.index[i]}!")
                 #pass
             else:
                 lat= literal_eval(bd.iloc[self.index[i]][f'lat_stereo_{self.satellite}']) #reads the latitude value for this bolide
@@ -92,4 +91,4 @@ class Bolide:
             else:
                 dict= {f'Index in {self.dataframe}' : ilist, 'Satellite' : f'{self.satellite}', 'Rocky Bolide Radii' : rockyradii, 'Rocky Bolide Uncertainty' : errorrocky, 'Metal Bolide Radii' : metalradii, 'Metal Bolide Uncertainty' : errormetal, 'Icy Bolide Radii' : icyradii, 'Icy Bolide Uncertainty' : erroricy}
             bdict = pd.DataFrame(data=dict) #dataframe of all the results
-            return(bdict)
+        return(bdict)

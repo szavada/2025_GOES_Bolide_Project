@@ -91,4 +91,4 @@ class Bolide:
             else:
                 dict= {f'Index in {self.dataframe}' : ilist, 'Satellite' : f'{self.satellite}', 'Rocky Bolide Radii' : rockyradii, 'Rocky Bolide Uncertainty' : errorrocky, 'Metal Bolide Radii' : metalradii, 'Metal Bolide Uncertainty' : errormetal, 'Icy Bolide Radii' : icyradii, 'Icy Bolide Uncertainty' : erroricy}
             bdict = pd.DataFrame(data=dict) #dataframe of all the results
-            return(bdict)
+        return(bdict)
