@@ -9,8 +9,8 @@ class Bolide:
         self.dataframe= dataframe
         self.index= index
         self.satellite= satellite
-        self.errorlat= 4000 #we're estimating that the error on latitude and longitude measurements are half a pixel, or 4000 meters
-        self.errorlong= 4000
+        self.errorlat= 5000 #5 km error for latitude and longitude (Jenniskens, 2018)
+        self.errorlong= 5000
         self.rockyrho = 3500 #kg/m^3
         self.metalrho = 7500 #kg/m^3 #constants for bolide density based on possible composition
         self.icyrho = 750 #kg/m^3
